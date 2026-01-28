@@ -4,96 +4,134 @@
     <meta charset="UTF-8">
     <title>UruguayMC</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Servidor de Minecraft uruguayo">
+
+    <!-- Font Awesome (ICONOS) -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <!-- Fuente -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
     <style>
-        body {
+        * {
             margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1e90ff, #00bcd4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
             color: white;
-        }
-
-        header {
             text-align: center;
-            padding: 80px 20px;
         }
 
-        header h1 {
-            font-size: 3em;
+        .container {
+            background: rgba(0,0,0,0.35);
+            padding: 40px;
+            border-radius: 20px;
+            max-width: 520px;
+            width: 90%;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+        }
+
+        .logo {
+            width: 160px;
+            margin-bottom: 15px;
+            filter: drop-shadow(0 10px 20px rgba(0,0,0,0.5));
+        }
+
+        h1 {
+            font-size: 3rem;
             margin-bottom: 10px;
         }
 
-        .botones a {
-            text-decoration: none;
-            color: white;
-            background: #00b4d8;
-            padding: 15px 30px;
-            margin: 10px;
-            border-radius: 8px;
-            display: inline-block;
-            font-weight: bold;
+        p {
+            font-size: 1.05rem;
+            margin-bottom: 25px;
         }
 
-        section {
-            max-width: 900px;
-            margin: auto;
-            padding: 40px 20px;
-            text-align: center;
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 18px;
+            margin: 25px 0;
+        }
+
+        .social-icon {
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 22px;
+            text-decoration: none;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .social-icon:hover {
+            transform: scale(1.15);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+        }
+
+        .instagram {
+            background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
+        }
+
+        .discord {
+            background: #5865F2;
+        }
+
+        .tiktok {
+            background: linear-gradient(45deg, #010101, #25F4EE, #FE2C55);
         }
 
         footer {
-            background: black;
-            text-align: center;
-            padding: 15px;
-            font-size: 0.9em;
+            margin-top: 20px;
+            font-size: 0.8rem;
+            opacity: 0.8;
         }
     </style>
 </head>
 
 <body>
 
-<header>
-    <img src="logo.png" alt="Logo UruguayMC" class="logo">
-    <h1>UruguayMC</h1>
-    <p>Servidor de Minecraft para divertirte con amigos</p>
+    <div class="container">
+        <img src="logo.png" alt="Logo UruguayMC" class="logo">
 
-<div class="social-buttons">
-    <a href="https://www.instagram.com/uruguaymc.oficial/" 
-       target="_blank" 
-       class="btn instagram">
-        Instagram
-    </a>
+        <h1>UruguayMC</h1>
 
-    <a href="https://discord.gg/JynjMCGMWV" 
-       target="_blank" 
-       class="btn discord">
-        Discord
-    </a>
-</div>
+        <p>
+            Jugá con amigos en UruguayMC. Unite a Discord:
+            https://discord.gg/JynjMCGMWW
+        </p>
 
+        <div class="social-buttons">
+            <a href="https://www.instagram.com/uruguaymc.oficial/" target="_blank" class="social-icon instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
 
+            <a href="https://discord.gg/JynjMCGMWV" target="_blank" class="social-icon discord">
+                <i class="fab fa-discord"></i>
+            </a>
+
+            <a href="https://www.tiktok.com/@uruguaymc?lang=es" target="_blank" class="social-icon tiktok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+        </div>
+
+        <footer>
+            © 2026 UruguayMC — Todos los derechos reservados
+        </footer>
     </div>
-</header>
-
-<section>
-    <h2>¿Por qué elegirnos?</h2>
-    <p>
-        ✔ Comunidad amigable<br>
-        ✔ Eventos constantes<br>
-        ✔ Staff activo<br>
-        ✔ Diversión asegurada
-    </p>
-</section>
-
-<footer>
-    © 2026 UruguayMC - Todos los derechos reservados
-</footer>
 
 </body>
 </html>
-
-
-
-
 
 
